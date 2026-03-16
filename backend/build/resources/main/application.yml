@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: sports-news-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: kimminseok
+    password: 1234 # TODO: 실제 비밀번호로 교체
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+server:
+  port: 8080
+
+naver:
+  api:
+    client-id: "q6hmO_lV5f8f0DCNuH3A"    # TODO: 네이버 API Client ID 입력
+    client-secret: "WRQvGG92Ii" # TODO: 네이버 API Client Secret 입력
+
